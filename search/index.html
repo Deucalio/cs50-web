@@ -7,6 +7,7 @@
     <title>Google</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
+
   <body>
     <section class="flex h-screen flex-col justify-between gap-4">
       <nav class="border-rose-700">
@@ -47,10 +48,14 @@
               alt=""
             />
           </li>
-          <li class="col-span-4 lg:mx-auto lg:w-4/5">
-            <form action="https://www.google.com/search">
+
+          <li class="flex flex-col border-sky-400 col-span-4">
+            <form
+              class="grid grid-cols-2 gap-4 lg:mx-auto lg:w-4/5"
+              action="https://www.google.com/search"
+            >
               <div
-                class="relative h-10 overflow-hidden rounded-3xl ring-1 ring-zinc-300 hover:shadow-lg hover:ring-2 lg:h-12"
+                class="col-span-2 relative h-10 overflow-hidden rounded-3xl ring-1 ring-zinc-300 hover:shadow-lg hover:ring-2 lg:h-12"
               >
                 <svg
                   class="pointer-events-none absolute left-2 top-1/4 h-6 text-zinc-400"
@@ -70,28 +75,32 @@
                 <input
                   name="q"
                   type="text"
+                  id="query"
                   class="h-full w-full rounded-3xl px-12 outline-none lg:text-xl"
                 />
               </div>
-            </form>
-          </li>
-          <li
-            class="col-span-4 mx-auto hidden flex-row gap-3 pl-7 text-sm sm:flex"
-          >
-            <form action="https://www.google.com/search">
-              <input type="submit"  name="q" />
-              <button
-                class="rounded-md border-2 border-[#f8f9fa] bg-[#f8f9fa] px-4 py-2 hover:border-zinc-200 hover:shadow-md focus:border-blue-400"
+
+              <div
+                class="col-span-2 flex flex-row px-6 border-amber-600 items-center justify-center gap-6"
               >
-                Google Search
-              </button>
+                <button
+                  type="submit"
+                  class="rounded-md border-2 border-[#f8f9fa] bg-[#f8f9fa] px-4 py-2 hover:border-zinc-200 hover:shadow-md focus:border-blue-400"
+                >
+                  Google Search
+                </button>
+
+                <button
+                  type="submit"
+                  class="rounded-md border-2 border-[#f8f9fa] bg-[#f8f9fa] px-4 py-2 hover:border-zinc-200 hover:shadow-md focus:border-blue-400"
+                >
+                  I'm Feeling Lucky
+                  <input type="hidden" name="btnI" value="1" />
+                </button>
+              </div>
             </form>
-            <button
-              class="rounded-md border-2 border-[#f8f9fa] bg-[#f8f9fa] px-4 py-2 hover:border-zinc-200 hover:shadow-md focus:border-blue-400"
-            >
-              I'm Feeling Lucky
-            </button>
           </li>
+
           <li class="col-span-4 mx-auto text-sm">
             <div class="flex flex-row gap-3 border-red-500 text-[#1a0dab]">
               <p class="text-black">Google offered in:</p>
