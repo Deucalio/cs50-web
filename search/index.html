@@ -14,7 +14,9 @@
           class="flex cursor-pointer flex-row items-center justify-end gap-4 px-7 py-2 text-sm"
         >
           <li class="hover:underline">Gmail</li>
-          <li class="hover:underline">Images</li>
+          <li class="hover:underline">
+            <a href="./images.html">Images</a>
+          </li>
           <li class="rounded-full p-2 hover:bg-zinc-200/70">
             <div class="rounded-full">
               <svg class="mt-1 h-7" focusable="false" viewBox="0 0 24 24">
@@ -46,28 +48,32 @@
             />
           </li>
           <li class="col-span-4 lg:mx-auto lg:w-4/5">
-            <div
-              class="relative h-10 overflow-hidden rounded-3xl ring-1 ring-zinc-300 hover:shadow-lg hover:ring-2 lg:h-12"
-            >
-              <svg
-                class="pointer-events-none absolute left-2 top-1/4 h-6 text-zinc-400"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
+            <form action="https://www.google.com/search">
+              <div
+                class="relative h-10 overflow-hidden rounded-3xl ring-1 ring-zinc-300 hover:shadow-lg hover:ring-2 lg:h-12"
               >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+                <svg
+                  class="pointer-events-none absolute left-2 top-1/4 h-6 text-zinc-400"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+                  />
+                </svg>
+
+                <input
+                  name="q"
+                  type="text"
+                  class="h-full w-full rounded-3xl px-12 outline-none lg:text-xl"
                 />
-              </svg>
-              <input
-                type="text"
-                class="h-full w-full rounded-3xl px-12 outline-none lg:text-xl"
-              />
-            </div>
+              </div>
+            </form>
           </li>
           <li
             class="col-span-4 mx-auto hidden flex-row gap-3 pl-7 text-sm sm:flex"
@@ -97,7 +103,7 @@
       </main>
 
       <footer
-        class="flex h-28 sm:h-20 flex-col gap-2 border-slate-600 bg-[#f2f2f2] pb-8 sm:pb-1 text-[#70757a] tracking-tighter"
+        class="flex h-28 flex-col gap-2 border-slate-600 bg-[#f2f2f2] pb-8 tracking-tighter text-[#70757a] sm:h-20 sm:pb-1"
       >
         <div
           class="flex h-1/2 items-center border-b-2 border-[#dadce0] bg-[#f2f2f2] px-4 sm:px-8"
