@@ -1,115 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Google Advnaced Search</title>
     <script src="https://cdn.tailwindcss.com"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <section class="flex h-screen flex-col">
-        <nav class="flex border-4 border-sky-400">
-            <ul class="flex cursor-pointer w-full flex-row items-center justify-between gap-3 p-4">
-                <li>
-                    <a href="./index.html">
-                        <img class="h-8"
-                            src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
-                            alt="" />
-                    </a>
-                </li>
+      <nav class="flex border-4 border-sky-400">
+        <ul
+          class="flex cursor-pointer w-full flex-row items-center justify-between gap-3 p-4"
+        >
+          <li>
+            <a href="./index.html">
+              <img
+                class="h-8"
+                src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+                alt=""
+              />
+            </a>
+          </li>
 
-                <li class="flex flex-row gap-6 px-4 items-center">
-                    <div class="hover:bg-zinc-200/70 h-8 w-8 rounded-full grid items-center justify-center">
-                        <svg class="mt-1 h-6" focusable="false" viewBox="0 0 24 24">
-                            <path
-                                d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z">
-                            </path>
-                        </svg>
-                    </div>
-                    <div class="hover:bg-zinc-200/70 rounded-full p-1">
-                        <img class="h-8 rounded-full"
-                            src="https://lh3.googleusercontent.com/ogw/AOLn63GMAlAlZSjjaIMVEMDpv0y1-XHltLDPQJrev7B0=s32-c-mo"
-                            alt="" />
-                    </div>
-                </li>
-            </ul>
-        </nav>
+          <li class="flex flex-row gap-6 px-4 items-center">
+            <div
+              class="hover:bg-zinc-200/70 h-8 w-8 rounded-full grid items-center justify-center"
+            >
+              <svg class="mt-1 h-6" focusable="false" viewBox="0 0 24 24">
+                <path
+                  d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z"
+                ></path>
+              </svg>
+            </div>
+            <div class="hover:bg-zinc-200/70 rounded-full p-1">
+              <img
+                class="h-8 rounded-full"
+                src="https://lh3.googleusercontent.com/ogw/AOLn63GMAlAlZSjjaIMVEMDpv0y1-XHltLDPQJrev7B0=s32-c-mo"
+                alt=""
+              />
+            </div>
+          </li>
+        </ul>
+      </nav>
 
-        <main class="sm:py-6">
-            <p class="px-8 text-2xl tracking-tight text-[#d93025]">
-                Advanced Search
+      <main class="sm:py-6">
+        <p class="px-8 text-2xl tracking-tight text-[#d93025]">
+          Advanced Search
+        </p>
+        <div class="my-7 border-b-2 border-zinc-200"></div>
+
+        <ul class="px-8 md:w-3/4">
+          <li class="flex flex-row justify-between text-lg md:w-11/12">
+            <p class="font-medium sm:font-normal">Find pages with...</p>
+            <p class="hidden font-medium text-[#777] sm:block">
+              To do this in the search box.
             </p>
-            <div class="my-7 border-b-2 border-zinc-200"></div>
+          </li>
+          <li class="py-2">
+            <form
+              class="flex flex-col gap-2"
+              action="https://www.google.com/search"
+              method="GET"
+              target="_blank"
+            >
+              <div class="flex flex-col sm:grid sm:grid-cols-6">
+                <label class="col-span-1" for="query">All these words:</label>
+                <input
+                  class="border-zinc-400 border-2 outline-none ring-0 focus:ring-1 focus:ring-blue-600 shadow-sm mb-4 w-full sm:col-span-3"
+                  type="text"
+                  id="query"
+                  name="as_q"
+                />
+                <p class="text-[#555] text-xs hidden sm:block ml-7 col-span-2">
+                  Type the important words: tri-colour rat terrier
+                </p>
+              </div>
 
-            <ul class="px-8 md:w-3/4">
-                <li class="flex flex-row justify-between text-lg md:w-11/12">
-                    <p class="font-medium sm:font-normal">Find pages with...</p>
-                    <p class="hidden font-medium text-[#777] sm:block">
-                        To do this in the search box.
-                    </p>
-                </li>
-                <li class="py-2">
-                    <form class="flex flex-col gap-2" action="https://www.google.com/search" method="GET"
-                        target="_blank">
-                        <div class="flex flex-col sm:grid sm:grid-cols-6">
-                            <label class="col-span-1" for="query">All these words:</label>
-                            <input
-                                class="border-zinc-400 border-2 outline-none ring-0 focus:ring-1 focus:ring-blue-600 shadow-sm mb-4 w-full sm:col-span-3"
-                                type="text" id="query" name="as_q" />
-                            <p class="text-[#555] text-xs hidden sm:block ml-7 col-span-2">
-                                Type the important words: tri-colour rat terrier
-                            </p>
-                        </div>
+              <div class="flex flex-col sm:grid sm:grid-cols-6">
+                <label class="col-span-1" for="exact"
+                  >Exact word or phrase:</label
+                >
+                <input
+                  class="border-zinc-400 border-2 outline-none ring-0 focus:ring-1 focus:ring-blue-600 shadow-sm mb-4 w-full sm:col-span-3"
+                  type="text"
+                  id="exact"
+                  name="as_epq"
+                />
+                <p class="text-[#555] text-xs hidden sm:block ml-7 col-span-2">
+                  Put exact words in quotes: "rat terrier"
+                </p>
+              </div>
 
-                        <div class="flex flex-col sm:grid sm:grid-cols-6">
-                            <label class="col-span-1" for="exact">Exact word or phrase:</label>
-                            <input
-                                class="border-zinc-400 border-2 outline-none ring-0 focus:ring-1 focus:ring-blue-600 shadow-sm mb-4 w-full sm:col-span-3"
-                                type="text" id="exact" name="as_epq" />
-                            <p class="text-[#555] text-xs hidden sm:block ml-7 col-span-2">
-                                Put exact words in quotes: "rat terrier"
-                            </p>
-                        </div>
+              <div class="flex flex-col sm:grid sm:grid-cols-6">
+                <label class="col-span-1" for="any">Any of these words:</label>
+                <input
+                  class="border-zinc-400 border-2 outline-none ring-0 focus:ring-1 focus:ring-blue-600 shadow-sm mb-4 w-full sm:col-span-3"
+                  type="text"
+                  id="any"
+                  name="as_oq"
+                />
+                <p class="text-[#555] text-xs hidden sm:block ml-7 col-span-2">
+                  Type OR between all the words you want: miniature OR standard
+                </p>
+              </div>
 
-                        <div class="flex flex-col sm:grid sm:grid-cols-6">
-                            <label class="col-span-1" for="exclude">Exclude words:</label>
-                            <input
-                                class="border-zinc-400 border-2 outline-none ring-0 focus:ring-1 focus:ring-blue-600 shadow-sm mb-4 w-full sm:col-span-3"
-                                type="text" id="exclude" name="as_eq" />
-                            <p class="text-[#555] text-xs hidden sm:block ml-7 col-span-2">
-                                Type OR between all the words you want: miniature OR standard
-                            </p>
-                        </div>
+              <div class="flex flex-col sm:grid sm:grid-cols-6">
+                <label class="col-span-1" for="none"
+                  >None of these words:</label
+                >
+                <input
+                  class="border-zinc-400 border-2 outline-none ring-0 focus:ring-1 focus:ring-blue-600 shadow-sm mb-4 w-full sm:col-span-3"
+                  type="text"
+                  id="none"
+                  name="as_nlo"
+                />
+                <p class="text-[#555] text-xs hidden sm:block ml-7 col-span-2">
+                  Put a minus sign just before words that you don't want:
+                  -rodent, -"Jack Russell"
+                </p>
 
-                        <div class="flex flex-col sm:grid sm:grid-cols-6">
-                            <label class="col-span-1" for="none">None of these words:</label>
-                            <input
-                                class="border-zinc-400 border-2 outline-none ring-0 focus:ring-1 focus:ring-blue-600 shadow-sm mb-4 w-full sm:col-span-3"
-                                type="text" id="none" name="as_nlo" />
-                            <p class="text-[#555] text-xs hidden sm:block ml-7 col-span-2">
-                                Put a minus sign just before words that you don't want:
-                                -rodent, -"Jack Russell"
-                            </p>
+                <button
+                  class="bg-blue-600 col-start-4 col-span-2 px-2 py-2 text-white text-sm tracking-tight rounded-sm w-fit"
+                >
+                  Advanced Search
+                </button>
+              </div>
 
-                            <button
-                                class="bg-blue-600 col-start-4 col-span-2 px-2 py-2 text-white text-sm tracking-tight rounded-sm w-fit">
-                                Advanced Search
-                            </button>
-                        </div>
-
-                        <!-- <div class="flex flex-col sm:grid sm:grid-cols-6">
+              <!-- <div class="flex flex-col sm:grid sm:grid-cols-6">
         
               </div> -->
 
-                        <!-- <button class="bg-blue-600 px-2 py-2 text-white text-sm tracking-tight rounded-sm w-fit">Advanced Search</button> -->
-                    </form>
-                </li>
-            </ul>
-        </main>
+              <!-- <button class="bg-blue-600 px-2 py-2 text-white text-sm tracking-tight rounded-sm w-fit">Advanced Search</button> -->
+            </form>
+          </li>
+        </ul>
+      </main>
     </section>
-</body>
-
+  </body>
 </html>
