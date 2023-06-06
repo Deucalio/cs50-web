@@ -7,7 +7,7 @@ Topics explored in this course include database design, scalability, security, a
 
 
 ## Projects
-- [Project 0: Search](./search) - Simple React app wich collects user feedbacks and renders it
+- [Project 0: Search](./search) - a front-end for Google Search, Google Image Search, and Google Advanced Search
 - [Project 1](./) - tbd
 - [Project 2](./) - tbd
 - [Project 3](./) - tbd
